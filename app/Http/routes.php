@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('pages/homepage');
 });
 Route::get('/about',function(){
-    return view('pages/about');
+    $halaman ='about';
+    return view('pages.about', compact('halaman'));
 });
 Route::get('/hallo',function(){
     return 'Hallo laravel';
@@ -28,6 +29,7 @@ Route::get('showmesecret',function(){
 });
 
 Route::get('siswa',function(){
-    $siswa = ['ramus kurniawan', 'taylor swif','mario', 'sugeng'];
-    return view('siswa.index')->with('siswa', $siswa);
+    $halaman= 'siswa';
+    $siswa = ['ramus kurniawan', 'taylor swif','mario', 'sugeng kurniawan'];
+    return view('siswa.index',compact('halaman','siswa'));
 });
