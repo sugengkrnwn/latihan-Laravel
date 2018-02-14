@@ -14,6 +14,7 @@
 Route::get('/', 'PagesController@homepage');
 Route::get('/about','PagesController@about');
 Route::get('siswa', 'SiswaController@index');
+Route::get('siswa/create', 'SiswaController@create');
 // Route::get('/about',function(){
 //     $halaman ='about';
 //     return view('pages.about', compact('halaman'));
