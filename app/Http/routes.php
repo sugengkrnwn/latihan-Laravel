@@ -29,5 +29,5 @@ Route::get('showmesecret',function(){
 
 Route::get('siswa',function(){
     $siswa = ['ramus kurniawan', 'taylor swif','mario', 'sugeng'];
-    return view('siswa.index', compact('siswa'));
+    return view('siswa.index')->with('siswa', $siswa);
 });
