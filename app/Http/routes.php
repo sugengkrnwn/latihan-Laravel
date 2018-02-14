@@ -12,5 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/homepage');
+});
+Route::get('/about',function(){
+    return view('pages/about');
+});
+Route::get('/hallo',function(){
+    return 'Hallo laravel';
+});
+Route::get('halaman-rahasia',['as' => 'secret',function(){
+    return 'hallo gaes ini halaman rahasia';
+}]);
+Route::get('showmesecret',function(){
+    return redirect()->route('secret');
+});
+
+Route::get('siswa',function(){
+    $siswa = ['ramus kurniawan', 'taylor swif','mario', 'sugeng'];
+    return view('siswa.index', compact('siswa'));
 });
