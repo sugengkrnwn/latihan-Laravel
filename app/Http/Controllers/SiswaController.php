@@ -15,4 +15,7 @@ class SiswaController extends Controller
         $siswa = ['Ramus darmawan','ahmad taylor','Sugeng kurniawan','haris'];
         return view('siswa.index', compact('halaman','siswa'));
     }
+    public function create(){
+        return view('siswa.create');
+    }
 }
