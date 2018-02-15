@@ -4,7 +4,7 @@
 <div class="siswa">
     <h2>Tambah Siswa</h2>
 <form action="{{ url('siswa') }}"  method = "post">
-{{ csrf_field() }}
+
     <div class="form-group">
         <label for="nisn" class="control-label">NISN</label>
         <input name="nisn" id ="nisn" type="text" class="form-control">
