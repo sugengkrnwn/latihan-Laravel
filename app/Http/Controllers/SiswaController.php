@@ -12,9 +12,9 @@ class SiswaController extends Controller
 
     public function index()
     {
-        $halaman = 'siswa';
-        $siswa = ['Ramus darmawan','ahmad taylor','Sugeng kurniawan','haris'];
-        return view('siswa.index', compact('halaman','siswa'));
+       $halaman = 'siswa';
+       $siswa_list = Siswa::all();
+       return view('siswa.index', compact('halaman','siswa_list'));
     }
     public function create()
     {
