@@ -9,12 +9,6 @@ use App\Http\Requests;
 class SiswaController extends Controller
 {
     //siswa
-    protected $request; 
-    
-    public function __construct(Request $req)
-    {
-        $this->request= $req;
-    }
 
     public function index()
     {
@@ -28,7 +22,7 @@ class SiswaController extends Controller
     }
     public function store(Request $request)
     {
-        $data = $this->request;
-        $siswa = $data->all();
+        $siswa = $request->all();
+        return $siswa;
     }
 }
