@@ -18,6 +18,7 @@ Route::get('siswa', 'SiswaController@index');
 Route::get('siswa/create', 'SiswaController@create');
 Route::post('siswa', 'SiswaController@store');
 
+
 Route::get('/hallo',function(){
     return 'Hallo laravel';
 });
