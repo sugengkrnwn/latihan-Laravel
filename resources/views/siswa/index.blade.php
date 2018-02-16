@@ -1,4 +1,21 @@
 @extends('template')
+@section('css')
+    .table-bottom{
+        height:40px;
+        padding: 10px 0;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .bottom-nav{
+        margin-top: 20px;
+        
+    }
+    h2{
+        border-bottom: 1px solid #000;
+    }
+@stop
+
 @section('main')
 <div id ="siswa">
     <h2>Siswa</h2>
@@ -31,6 +48,16 @@
     @endif
     <div class="pull-left">
         <strong>Jumlah Siswa : {{ $jumlah_siswa}}</strong>    
+    </div>
+    <div class="col-auto mr-auto">
+        Pagination
+    </div>
+</div>
+<div class="bottom-nav">
+    <div>
+        <a href="siswa/create" class="btn btn-primary">
+        Tambah Siswa
+        </a>
     </div>
 </div>
 @stop

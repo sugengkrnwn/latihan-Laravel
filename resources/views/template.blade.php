@@ -5,13 +5,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <style>
-    /* html{
-      position: relative;
-      min-height:100%
-    }
-    body{
-      margin-bottom: 70px;
-    } */
+   
+    @yield('css')
     #footer {
       position: absolute;
       bottom: 0;
@@ -23,8 +18,8 @@
       padding-top: 10px;
     }
   </style>
-    @yield('css')
-    <title>Hello, world!</title>
+
+    <title>Laravel data siswa</title>
   </head>
   <body>
   <div class="container">
