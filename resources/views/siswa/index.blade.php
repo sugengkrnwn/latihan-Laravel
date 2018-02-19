@@ -46,14 +46,14 @@
     @else
         <p>Tidak ada data</p>
     @endif
-    <div class="pull-left">
+    <div class="text-left">
         <strong>Jumlah Siswa : {{ $jumlah_siswa}}</strong>    
     </div>
-    <div class="col-auto mr-auto">
+    <div class="col col-lg-2">
         Pagination
     </div>
 </div>
-<div class="bottom-nav">
+<div class="bottom-nav-right">
     <div>
         <a href="siswa/create" class="btn btn-primary">
         Tambah Siswa
